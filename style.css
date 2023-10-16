@@ -1,0 +1,90 @@
+/* * {box-sizing: border-box} */
+
+/* Add padding to containers */
+.containerx {
+    padding: 25px;
+  }
+  .hw{
+      height: 350px;
+      width: 50%;
+  
+  }
+  .bg{
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    background-color: red !important;
+  }
+  .h{
+      margin: 20px;
+  }
+  .center{
+      text-align: center;
+  }
+    .child {
+      position: absolute;
+      top: 0%;
+      left: 25%;
+      margin: 0;
+    }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password],select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    /* display: inline-block; */
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 15px;
+  }
+  label{
+      color: rgb(78, 73, 73);
+  }
+  .color{
+      color: #04AA6D;
+  }
+  /* Set a style for the submit/register button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  
+  /*for table*/
+  table, td, th {  
+      border: 1px solid hsl(0, 0%, 87%);
+      text-align: left;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      padding: 15px;
+    }
