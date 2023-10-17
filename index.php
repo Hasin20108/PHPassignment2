@@ -1,50 +1,30 @@
-<?php
-
-    include 'book.php';
-    include 'customer.php';
-
-    if(isset($_GET['save_info'])){
-        $book = new Book ($_GET['isbn'],$_GET['title'],$_GET['author'],$_GET['available']);
-
-        echo $book;
-        
-    }
-
-
-?>
-
-<!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="hw child">
-        <form action="<?php $_SERVER['PHP_SELF']?>" method="GET">
-        <div class="container vertical-center">
-            <h1 class="center color">Book Class</h1>
-            <hr>
-            <label for="psw"><b>ISBN</b></label>
-            <input type="text" placeholder="Enter ISBN Number" name="isbn" id="psw" required>
-            <label for="email"><b>Title</b></label>
-            <input type="text" placeholder="Enter Title" name="title" id="email" required>
-            <label for="psw"><b>Author</b></label>
-            <input type="text" placeholder="Enter Author Name" name="author" id="psw" required>
-            <label for="psw"><b>Available</b></label>
-            <input type="text" placeholder="Enter Available Number" name="available" id="psw" required>
-            <hr>
 
-            <button type="submit" class="registerbtn center" name="save_info">Create Book</button>
-        </div>
-        </form>
-        <a href="SeeBook.php">
-            <button type="submit" class="registerbtn center" name="save_info">See Book</button>
-         </a>
-    </div>
-    <div class="hw"></div>
-    <div class="hw"></div>
- 
+    <?php 
+        include_once 'Book.php';
+        include_once 'Customer.php';
 
-</body>
+        $Customer1 = new Customer(1, "Bakhtiar", "Hasin","bakhtiarhasin2000@gmail.com");
+        $Customer2 = new Customer(2, "Farhan", "Yusuf", "farhan1345@gmail.com");
+        
+        $book1 = new Book(5007, "Paradoxical Sajid", "Arif Azad", 10);
+        $book2 = new Book(5007, "Rahe Belayat", "Dr. Khondokar Abdullah Jahangir", 10);
+        
+        
+    ?>
+    <h3>Customer List</h3>
+    <?php
+        echo $Customer1;echo '<br>';
+        echo $Customer2;echo '<br>';
+    ?>
+
+    <h3>Book List</h3><br>
+    <?php
+        echo $book1->sethgfTitle("ahdhhadh");
+        echo $book1;echo '<br>';
+        echo $book1->getCopy();echo '<br>';
+        echo $book2;echo '<br>';
+    ?>
+
 </html>
+
